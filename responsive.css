@@ -1,0 +1,162 @@
+@media(max-width:670px){
+
+.bagian-utama-top{
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0 0;
+}
+
+.bagian-utama{
+    padding: 80px 20px 80px 20px;
+    background-color: rgba(0,0,0,0.3);  
+}
+.bagian-utama h1{   
+    font-size: 24px;
+}
+
+.bagian-utama h2{
+    font-size: 20px;
+}
+
+.bagian-utama p{
+    font-size: 15px;
+}
+
+.bttn{
+    margin-top: 30px;
+    width: 100%;  
+}
+.bttn a{
+    margin-top: 20px;
+    
+    display: block;
+}
+
+.member-wrapper { 
+    margin: 0 auto;   
+    text-align: left;    
+}
+    
+.member {
+    width: 100%;
+    margin-left: 18%;   
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.text-member {
+    width: 100%;    
+} 
+    
+.member-name  {
+    width: 100%;
+    font-size: 18px;
+}
+
+input,textarea{
+    width:80%;
+  }
+
+
+  .fa-bars {
+    
+    color: white;
+    font-size: 40px;
+    padding: 20px 0px;
+    visibility: visible;
+    cursor: pointer;
+  }
+
+  .header-right {
+    display: none; 
+  }
+
+  header {
+    width: 100%;
+}
+   
+.dropdown {
+    display: inline-block;
+    visibility: visible;
+    float: right;    
+}
+
+.dropdown-content {
+    
+    display: none;
+    position: absolute;
+    background-color: rgba(4, 6, 12, 0.6);
+    width: 65%;
+    
+    z-index: 1;  
+  }
+
+  .dropdown-content a {
+    color: rgb(255, 254, 254);
+    padding: 12px 0;
+    text-decoration: none;
+    display: block;
+    padding-left: 35%;
+    border: none;
+  } 
+
+  .dropdown-content a:hover{
+      background-color: rgba(85, 74, 74, 0.8);
+  } 
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-left: -59%;
+    
+}
+
+   
+.footer-center {
+    display:inline-block;
+    padding-right:2px;
+  }
+  
+  .footer-center p {
+   font-size:15px;
+   float:left;
+   padding-right:20px;
+   text-align:center;
+  }
+  
+  .footer-right {
+    display:inline-block;
+    padding-left:2px;
+    padding-right:5px;
+    float:left;  
+  }
+    
+ footer {
+  width: 100%;
+} 
+    
+    
+    
+}
+
+@media all and (max-width: 1000px) {
+
+.bagian-extra1 { 
+margin: 0 auto;   
+}
+
+.member {
+    width: 40%;
+    text-align: center;  
+}
+
+.footer-right{
+    float: left;
+    margin-left: 25%;
+}
+    
+.footer-center{
+    float: left;
+    margin-left: 26%;
+}
+
+}
