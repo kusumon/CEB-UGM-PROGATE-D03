@@ -1,204 +1,334 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+@font-face{
+    font-family: 'Quicksand';
+    src: url('font/Quicksand-Regular.ttf');
 }
 
 body {
-  margin: 0;
-  font-family: "Lucida Grande";
+    margin: 0;
+    font-family: "Quicksand";
+  }
+
+.bagian-utama-top{
+    max-width: 100%;
+    /*padding: 0 15px;*/
+    margin: 0 auto; 
+    text-align: center;
+    background-color: #FFEFCA;
+  }
+  
+.bagian-utama{
+    padding: 200px 0 200px 0;
+    background-color: rgba(0,0,0,0.3);  
 }
 
-a {
-  text-decoration: none;
+.cover{
+    background-size: cover;
+    background-repeat: no-repeat;
+    backface-visibility: hidden;
+    animation: slideBg 20s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('img/setup.jpg');
+    color: white;
 }
 
-.clear {
-  clear: left;
+@keyframes slideBg{
+    0% {
+        background-image: url('img/setup.jpg');
+    }
+    50% {
+        background-image: url('img/timwork.jpg');
+    }
+    100% {
+        background-image: url('img/work.jpg');
+    }
+}
+
+.bttn{
+    margin-top: 50px;
+    text-align: center;   
+}
+
+.bttn a{
+padding:5px 10px;
+margin:0 7px;
+border: 2px solid rgba(255, 255, 255, 0.6);
+border-radius: 10px;
+color: rgba(4, 6, 12, 0.7);
+font-weight: bold;
+background-color: rgba(255, 255, 255, 0.5);
+text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(255, 255, 255, 1);
+    color: rgba(4, 6, 12, 1);
+}
+
+.bagian-extra1 {
+    max-width: 100%;
+    text-align: left;
+    background-color: #E6E6FA;
 }
 
 .container {
-  max-width: 1170px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.top-wrapper {
-  padding: 180px 0 100px 0;
-  background-image: url(https://prog-8.com/images/html/advanced/top_en.png);
-  background-size: cover;
-  color: white;
-  text-align: center;
-}
-
-.top-wrapper h1 {
-  opacity: 0.7;
-  font-size: 45px;
-  letter-spacing: 5px;
-  margin-bottom: 10px;
-}
-
-.top-wrapper p {
-  opacity: 0.7;
-  margin-bottom: 3px;
-}
-
-.btn-wrapper {
-  text-align: center;
-  margin: 20px 0;
-}
-
-.btn-wrapper p {
-  margin: 10px 0;
-}
-
-.signup {
-  background-color: #239b76;
-}
-
-.facebook {
-  background-color: #3b5998;
-  margin-right: 10px;
-}
-
-.twitter {
-  background-color: #55acee;
-}
-
-.btn {
-  padding: 12px 24px;
-  color: white;
-  display: inline-block;
-  opacity: 0.8;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-
-.fa {
-  margin-right: 5px;
-}
-
-header {
-  height: 65px;
-  width: 100%;
-  background-color: rgba(34, 49, 52, 0.9);
-  position :fixed;
-  top: 0;
-  z-index: 10;
-}
-
-.logo {
-  width: 124px;
-  margin-top: 20px;
-}
-
-.header-left {
-  float: left;
-}
-
-.header-right {
-  float: right;
-  margin-right: -25px;
-}
-
-.header-right a {
-  line-height: 65px;
-  padding: 0 25px;
-  color: white;
-  display: block;
-  float: left;
-  transition: all 0.5s;
-}
-
-.header-right a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
-.menu-icon{
-  color: white;
-  float: right;
-  font-size: 25px;
-  padding: 21px 0;
-  display: none;
-}
-
-.lesson-wrapper {
-  padding-bottom: 80px;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: #f7f7f7;
-  text-align: center;
+    max-width: 1170px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .heading {
-  padding-top: 80px;
-  padding-bottom: 50px;
-  color: #5f5d60;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    color: #ebaa91;
+    font-size: 20px;
 }
 
-.heading h2 {
-  font-weight: normal;
+.heading p{
+    color: #5f5d60;  
+    font-size: 15px;    
 }
 
-.lesson {
-  float: left;
-  width: 25%;
+  .member-wrapper {
+    padding-bottom: 80px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+  
+.member {
+    float: left;
+    width: 20%;    
+}
+  
+.member-icon {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.6);
+ }
+
+.member-icon:hover{
+  border: 5px solid #6A5ACD;
+}  
+
+    
+.member-name {
+    
+    width: 80%;
+    display: inline-block;
+    margin-top: 15px;
+    color: black;
+    opacity: 60%;
+    text-align: center;
+    font-size: 15px;   
 }
 
-.lesson-icon {
-  position: relative;
+  .ours-heading{
+      padding-bottom: 20px;
+}
+ 
+.text-member {
+    
+    width: 80%;
+    display: inline-block;
+    padding-top: 5px;
+    font-size: 15px;
+    color: #5f5d60;
+    text-align: left;
+}  
+
+.clear{
+    clear:left;
 }
 
-.lesson-icon p {
-  position: absolute;
-  top: 44%;
-  width: 100%;
-  color: white;
+.extra-2{
+    max-width: 100%;
 }
 
-.text-contents {
-  width: 80%;
-  display: inline-block;
-  margin-top: 15px;
-  font-size: 15px;
-  color: #b3aeb5;
+  input,textarea{
+  width:400px;
+  margin-top:10px;
+  margin-bottom:30px;
+  padding:20px;
+  font-size:18px;
+  border:1px solid #dee7ec;
+  
 }
 
-.heading h3 {
-  font-weight: normal;
-}
+/* Tambahkan CSS untuk contact-submit */
 
-.message-wrapper {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 80px;
-  text-align: center;
-}
-
-.message {
-  padding: 15px 40px;
-  background-color: #5dca88;
+.contact-submit{
+    
+  background-color:#40E0D0;
+  color:#2f3542;
+  border-radius:50px;
+  box-shadow:10px 10px;
+  opacity:0.8;
+  display:inline-block;
   cursor: pointer;
-  box-shadow: 0 7px #1a7940;
+
 }
 
-.message:active {
-  position: relative;
-  top: 7px;
-  box-shadow: none;
+.contact-submit:hover{
+    opacity: 1;
 }
 
-footer img {
-  width: 125px;
+.contact-submit:active {
+    box-shadow: none;
+    position: relative;
+    top:10px;
 }
 
-footer p {
-  color: #b3aeb5;
-  font-size: 12px;
+  .contact-form{
+    text-align:center;
+    background-color:#87CEFA;
 }
+
+
+header {
+    height: 55px;
+    width: 100%;
+    background-color: rgba(4, 6, 12, 0.5);
+    position :fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.header-left{
+    float: left;
+    font-size: 10px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.header-right {
+    float: right;
+}
+
+.header-right a{
+    line-height: 55px;
+    padding: 0 25px;
+    color: white;
+    display: block;
+    float: left;
+    text-decoration: none;
+    transition: all 0.5s;  
+    border:none;   
+}
+
+.header-right a:hover{
+    background-color: rgba(0,0,0,0.3);
+}
+
+.fa-bars{
+    
+    display: none;
+    visibility: hidden;
+}
+
+.dropdown {
+    display: none;
+    visibility: hidden;
+}
+
+
 
 footer {
-  padding-top: 30px;
-  padding-bottom: 20px;
-}
+    max-width:100%;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin-bottom: 5px;
+    color:#FFA500;
+  }
+  
+  .footer-left {
+    padding-left:5px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    display: inline;
+    float: left;
+  }
+  
+  .footer-center {
+    display:inline-block;
+    justify-content: center;
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 420px;
+  }
+  
+  .footer-center p {
+    margin: 0 auto;
+    color:#FFA500;
+    font-size:15px;
+    text-align: center;
+  }
+  
+  .footer-right {
+    margin-right: 15px;
+    display: inline;
+  }
+  
+  .socmed {
+    display: inline;
+  }
+  
+  .fa:not(.fa-bars) {
+    text-decoration: none;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 20px;
+    margin-right:15px;
+    font-size: 15px;
+    width: 5px;
+    text-align: center;
+    float:right;
+    padding-bottom: 10px;
+    border:1px solid #FFA500;
+    border-radius: 50%;
+  }
+  .fa:hover {
+    opacity:0.5;
+    color:#FFA500;
+  }
+  
+  .fa-facebook {
+    background: white;
+    color: #FFA500;
+  }
+  
+  .fa-pinterest {
+    background: white;
+    color: #FFA500;
+  }
+  
+  .fa-linkedin {
+    background: white;
+    color: #FFA500;
+  }
+  
+  .fa-twitter {
+    background: white;
+    color: #FFA500;
+  }
+  
+  .fa-instagram {
+    background: white;
+    color: #FFA500;
+  }
+  
+  .fa-angle-up {
+    background-color:white;
+    color:#FFA500;
+    text-decoration:none;
+  }
+  
